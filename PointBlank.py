@@ -21,6 +21,10 @@ async def coinflip(ctx):
 @client.command()
 async def clear(ctx, amount = 3):
     await ctx.channel.purge(limit = amount + 1)
+    
+@client.command()
+async def say(ctx, msg):
+    await ctx.send("{}".format(msg))
 
 
 client.run('NTIxODYyMTI2NzQzMDYwNDkx.XMc4Dw.KRT39YgXQlXbB2Pd8FsAJrqwHKU')
